@@ -130,5 +130,14 @@ misp {
     }
   ]
 } 
+misp.attribute.mapping += {
+  mispCategory: "MISP_CATEGORY"  # MISP category of the attribute
+  mispType: "MISP_ATTRIBUTE"                 # MISP  type of the attribute
+  type: "TH_obsservable"                          # TheHive observable type
+  tags: [                                          # optional tags to add to observable when importing from MISP
+    "misp.category=\"MISP_CATEGORY\""
+    "misp.type=\"MISP_ATTRIBUTE\""
+  ]
+}
 ```
 
